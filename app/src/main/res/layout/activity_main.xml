@@ -25,6 +25,7 @@
         android:layout_marginHorizontal="100dp"
         android:layout_marginTop="50dp"
         android:padding="16dp"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvServiceStatus"/>
@@ -52,14 +53,36 @@
         app:layout_constraintTop_toBottomOf="@id/buttonStart"/>
 
     <Button
-        android:id="@+id/buttonSendData"
+        android:id="@+id/buttonBind"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Send data"
+        android:text="Bind service"
         android:layout_marginHorizontal="100dp"
         android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/buttonStop"/>
+
+    <Button
+        android:id="@+id/buttonUnbind"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Unbind service"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonBind"/>
+
+    <Button
+        android:id="@+id/buttonRandom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Generate Random Number"
+        android:layout_marginHorizontal="80dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonUnbind"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
